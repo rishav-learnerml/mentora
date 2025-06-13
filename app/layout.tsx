@@ -4,13 +4,16 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
-import {dark} from '@clerk/themes'
+import { dark } from "@clerk/themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mentora - The Best Mentorship Platform",
+  title: "Mentora - Mentorship Redefined",
   description: "Connect with mentors of your dream company - anytime,anywhere",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

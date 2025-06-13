@@ -1,3 +1,4 @@
+import Pricing from "@/components/Pricing";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-background">
-      <section className="relative overflow-hidden pb-32">
+      <section className="relative overflow-hidden py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -111,6 +112,9 @@ export default function Home() {
 
           <div>
             {/* Pricing Table */}
+
+            <Pricing />
+
             <Card className="mt-12 bg-muted/20 border-cyan-900/30">
               <CardHeader className="pb-2">
                 <CardTitle className="text-xl font-semibold text-white flex items-center">

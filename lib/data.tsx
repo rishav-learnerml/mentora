@@ -75,8 +75,8 @@ export const testimonials = [
 
 // JSON data for credit system benefits
 export const creditBenefits = [
-  "Each mentorship session costs <strong class='text-cyan-400'>2 credits</strong> — simple and transparent",
-  "Credits <strong class='text-cyan-400'>never expire</strong> — use them whenever you're ready to grow",
-  "Monthly plans give you <strong class='text-cyan-400'>fresh credits every month</strong>",
+  "Each mentorship session costs <strong class='text-cyan-400'>2 Mentokens</strong> — simple and transparent",
+  "Mentokens <strong class='text-cyan-400'>never expire</strong> — use them whenever you're ready to grow",
+  "Monthly plans give you <strong class='text-cyan-400'>fresh Mentokens every month</strong>",
   "Pause, cancel, or change your plan <strong class='text-cyan-400'>anytime</strong> — no questions asked",
 ];

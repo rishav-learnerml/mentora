@@ -119,9 +119,9 @@ model Payout {
   mentor          User          @relation(fields: [mentorId], references: [id], onDelete: Cascade)
   amount          Float         // Total payout amount in INR
   credits         Int           // Number of credits being paid out
-  platformFee     Float         // Platform fee deducted (7 INR per credit)
-  netAmount       Float         // Amount doctor receives (100 INR per credit)
-  upiEmail     String        // Doctor's upi email for payout
+  platformFee     Float         // Platform fee deducted (2 USD per credit)
+  netAmount       Float         // Amount mentor receives (5 USD per credit)
+  upiEmail     String        // Mentor's paypal email for payout
   status          PayoutStatus  @default(PROCESSING)
   createdAt       DateTime      @default(now())
   updatedAt       DateTime      @updatedAt
