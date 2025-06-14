@@ -5,7 +5,7 @@ export const checkUser = async () => {
   const user = await currentUser();
 
   if (!user) {
-    return;
+    return null;
   }
 
   try {
@@ -13,29 +13,47 @@ export const checkUser = async () => {
       where: {
         clerkUserId: user.id,
       },
+      include: {
+        transactions: {
+          where: {
+            type: "CREDIT_PURCHASE",
+            // Only get transactions from current month
+            createdAt: {
+              gte: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
+            },
+          },
+          orderBy: {
+            createdAt: "desc",
+          },
+          take: 1,
+        },
+      },
     });
 
     if (loggedInUser) {
       return loggedInUser;
     }
-    // If user does not exist in the database, create a new user
+
+    const name = `${user.firstName} ${user.lastName}`;
+
     const newUser = await db.user.create({
       data: {
         clerkUserId: user.id,
-        name: `${user.firstName} ${user.lastName}`.trim(),
-        email: user.emailAddresses[0]?.emailAddress || "",
-        imageUrl: user.imageUrl || "",
+        name,
+        imageUrl: user.imageUrl,
+        email: user.emailAddresses[0].emailAddress,
         transactions: {
           create: {
             type: "CREDIT_PURCHASE",
             packageId: "free_user",
-            amount: 2, //2 free credits for new users
+            amount: 2,
           },
         },
       },
     });
+
     return newUser;
   } catch (error) {
-    console.error("Error checking or creating user:", error);
+    console.error(error);
   }
 };

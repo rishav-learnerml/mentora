@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Mentora - Mentorahip Redefined
+
+A mentorship platform for career-guidance & growth
 
 ## Getting Started
 
