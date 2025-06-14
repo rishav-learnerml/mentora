@@ -1,12 +1,46 @@
-## Mentora - Mentorahip Redefined
+# 🚀 Mentora – Mentorship Redefined
 
-A mentorship platform for career-guidance & growth
+A powerful mentorship platform designed to bridge the gap between **mentees** seeking career guidance and **mentors** ready to share their journey.  
+Whether you're cracking your first job, making a career switch, or climbing the next step — **Mentora is where careers take shape.**
 
-## Getting Started
+---
 
-First, run the development server:
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js (App Router)](https://nextjs.org)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **Authentication**: [Clerk](https://clerk.dev)
+- **Icons**: [Lucide Icons](https://lucide.dev)
+- **ORM**: [Prisma](https://www.prisma.io)
+- **Database**: PostgreSQL / NeonDB (or any Prisma-supported DB)
+- **Deployment**: [Vercel](https://vercel.com)
+- **Fonts**: [Geist](https://vercel.com/font) via `next/font`
+
+---
+
+## 🔧 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/your-username/mentora.git
+cd mentora
+
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+3. Run the Development Server
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
@@ -14,25 +48,64 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+Open your browser and go to:
+👉 http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Project Structure
+bash
+Copy
+Edit
+/app            → App router pages (Next.js)
+/components     → Reusable UI components
+/lib            → Utility functions and helpers
+/styles         → Global styles and Tailwind config
+/prisma         → Prisma schema and migrations
+/public         → Static assets
+Modify your homepage from:
+app/page.tsx
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔒 Environment Variables
+Create a .env file in the root directory and add the following:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+env
+Copy
+Edit
+DATABASE_URL=your_database_url
+CLERK_SECRET_KEY=your_clerk_secret
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_public_key
+🧪 Migrations (if using Prisma)
+bash
+Copy
+Edit
+npx prisma migrate dev --name init
+🌍 Live Demo
+Hosted with ❤️ on Vercel
+👉 mentora.vercel.app (replace with your actual URL)
 
-## Learn More
+📚 Learn More
+📘 Next.js Documentation
 
-To learn more about Next.js, take a look at the following resources:
+🎨 Tailwind CSS Docs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔐 Clerk Authentication
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧠 Prisma ORM Docs
 
-## Deployed on Vercel
+🎯 Lucide Icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🙌 Contributing
+We welcome contributions from developers, mentors, mentees, and anyone passionate about creating better access to career guidance.
+Pull requests, issues, and feedback are always appreciated.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To contribute:
+
+Fork the repo
+
+Create a feature branch
+
+Submit a pull request 🚀
+
+🧾 License
+MIT © Rishav Chatterjee
+
+Built with 💡 by mentors, for the future makers.
