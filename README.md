@@ -25,11 +25,9 @@ Whether you're cracking your first job, making a career switch, or climbing the 
 ```bash
 git clone https://github.com/your-username/mentora.git
 cd mentora
-
-2. Install Dependencies
-bash
-Copy
-Edit
+```
+### 2. Install Dependencies
+```bash
 npm install
 # or
 yarn install
@@ -37,10 +35,9 @@ yarn install
 pnpm install
 # or
 bun install
-3. Run the Development Server
-bash
-Copy
-Edit
+```
+### 3. Run the Development Server
+```bash
 npm run dev
 # or
 yarn dev
@@ -48,13 +45,14 @@ yarn dev
 pnpm dev
 # or
 bun dev
-Open your browser and go to:
+```
+
+### Open your browser and go to:
 👉 http://localhost:3000
 
-📁 Project Structure
-bash
-Copy
-Edit
+### 📁 Project Structure
+```bash
+
 /app            → App router pages (Next.js)
 /components     → Reusable UI components
 /lib            → Utility functions and helpers
@@ -63,24 +61,27 @@ Edit
 /public         → Static assets
 Modify your homepage from:
 app/page.tsx
-
-🔒 Environment Variables
+```
+### 🔒 Environment Variables
 Create a .env file in the root directory and add the following:
 
+```bash
 env
-Copy
-Edit
+
 DATABASE_URL=your_database_url
 CLERK_SECRET_KEY=your_clerk_secret
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_public_key
 🧪 Migrations (if using Prisma)
-bash
-Copy
-Edit
+```
+```bash
 npx prisma migrate dev --name init
-🌍 Live Demo
+```
+
+### 🌍 Live Demo
+
 Hosted with ❤️ on Vercel
-👉 mentora.vercel.app (replace with your actual URL)
+
+👉 mentora.vercel.app (soon to be replaced with actual URL 🚀)
 
 📚 Learn More
 📘 Next.js Documentation
@@ -94,6 +95,7 @@ Hosted with ❤️ on Vercel
 🎯 Lucide Icons
 
 🙌 Contributing
+
 We welcome contributions from developers, mentors, mentees, and anyone passionate about creating better access to career guidance.
 Pull requests, issues, and feedback are always appreciated.
 
@@ -105,7 +107,7 @@ Create a feature branch
 
 Submit a pull request 🚀
 
-🧾 License
+### 🧾 License
 MIT © Rishav Chatterjee
 
 Built with 💡 by mentors, for the future makers.
