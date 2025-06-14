@@ -71,8 +71,8 @@ env
 DATABASE_URL=your_database_url
 CLERK_SECRET_KEY=your_clerk_secret
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_public_key
-🧪 Migrations (if using Prisma)
 ```
+### 🧪 Migrations (if using Prisma)
 ```bash
 npx prisma migrate dev --name init
 ```
