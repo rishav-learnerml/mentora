@@ -18,7 +18,7 @@ export default function Home() {
                 variant="outline"
                 className="bg-cyan-700/30 border-cyan-500/30 px-4 py-2 text-cyan-300 font-md text-sm"
               >
-                One Click Mentorship
+                <Link href="/pricing">One Click Mentorship</Link>
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl  font-bold text-white">
                 Connect with mentors <br />{" "}

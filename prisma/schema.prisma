@@ -24,7 +24,7 @@ model User {
   credits           Int       @default(2) // Accumulated credit balance
   
   // Mentor-specific fields
-  specialty         String?
+  speciality         String?
   experience        Int?      // Years of experience
   linkedinUrl     String?   // Document URL
   description       String?   @db.Text

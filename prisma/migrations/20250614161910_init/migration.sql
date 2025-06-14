@@ -27,7 +27,7 @@ CREATE TABLE "User" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "credits" INTEGER NOT NULL DEFAULT 2,
-    "specialty" TEXT,
+    "speciality" TEXT,
     "experience" INTEGER,
     "linkedinUrl" TEXT,
     "description" TEXT,
